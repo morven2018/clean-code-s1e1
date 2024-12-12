@@ -16,12 +16,13 @@ body {
 .hero .more-info {
   font-family: fantasy, cursive;
 }
-/*вернула к исходному за исключением отступов и переименования классов для п. 3.5*/
+
 @media (max-width:768px) {
-  .hero { text-align: center;
+  .hero { 
+    text-align: center;
+  }
 }
 
-}
 .centered-main-page-element {
   display: block;
   width: 500px;
