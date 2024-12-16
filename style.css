@@ -114,7 +114,7 @@ input[type="checkbox"] {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
-  width : 226px;  
+  width: 226px;  
   display: none;  
   vertical-align: middle;
 }
@@ -166,10 +166,10 @@ input[type="checkbox"] {
 }
 
 .input-edit {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .info-edit {
-  display:none;
+  display: none;
 }
