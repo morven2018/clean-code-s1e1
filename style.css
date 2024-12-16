@@ -69,7 +69,8 @@ h3 {
   margin: 0 auto 0;
 }
 
-.headline, .new-task__header {
+.headline, 
+.new-task__header {
   width: 100%;
   color: #333;
   font-weight: 700;
@@ -167,6 +168,7 @@ h3 {
 }
 
 .task__label_done {
-  text-decoration: line-through;  color: #888;
+  text-decoration: line-through;  
+  color: #888;
 }
 
