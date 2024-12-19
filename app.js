@@ -50,7 +50,7 @@ var createNewTaskElement = function (taskString) {
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
     editButton.classList.add("task__button");
     editButton.classList.add("task__button_edit");
-    
+
 
     deleteButton.className = "delete";
     deleteButtonImg.src = "./remove.svg";
@@ -137,6 +137,9 @@ var taskCompleted = function () {
     var listItem = this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
+    listItem.children[1].classList.toggle("task__label_done");
+    listItem.children[1].classList.toggle("task__label_incomplete");
+    listItem.classList.toggle("task_done");
 
 }
 
@@ -149,6 +152,10 @@ var taskIncomplete = function () {
     var listItem = this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
+    listItem.children[1].classList.toggle("task__label_done");
+    listItem.children[1].classList.toggle("task__label_incomplete");
+    listItem.classList.toggle("task_done");
+    console.log(listItem.children[1]);
 }
 
 
